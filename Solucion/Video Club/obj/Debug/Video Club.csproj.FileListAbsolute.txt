@@ -1,0 +1,10 @@
+G:\programacion\video club\Solucion\Video Club\bin\Debug\Video Club.exe.config
+G:\programacion\video club\Solucion\Video Club\bin\Debug\Video Club.exe
+G:\programacion\video club\Solucion\Video Club\bin\Debug\Video Club.pdb
+G:\programacion\video club\Solucion\Video Club\obj\Debug\Video Club.csproj.AssemblyReference.cache
+G:\programacion\video club\Solucion\Video Club\obj\Debug\Video_Club.Form1.resources
+G:\programacion\video club\Solucion\Video Club\obj\Debug\Video_Club.Properties.Resources.resources
+G:\programacion\video club\Solucion\Video Club\obj\Debug\Video Club.csproj.GenerateResource.cache
+G:\programacion\video club\Solucion\Video Club\obj\Debug\Video Club.csproj.CoreCompileInputs.cache
+G:\programacion\video club\Solucion\Video Club\obj\Debug\Video Club.exe
+G:\programacion\video club\Solucion\Video Club\obj\Debug\Video Club.pdb
