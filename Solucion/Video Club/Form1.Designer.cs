@@ -36,6 +36,13 @@ namespace Video_Club
             this.PicMax = new System.Windows.Forms.PictureBox();
             this.PicSalir = new System.Windows.Forms.PictureBox();
             this.MenuVertical = new System.Windows.Forms.Panel();
+            this.Panel_SubMenu = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.btn_RepPagos = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btn_RepALquiler = new System.Windows.Forms.Button();
+            this.btn_RepVentas = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btn_Reportes = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -54,6 +61,7 @@ namespace Video_Club
             ((System.ComponentModel.ISupportInitialize)(this.PicMax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicSalir)).BeginInit();
             this.MenuVertical.SuspendLayout();
+            this.Panel_SubMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,6 +134,7 @@ namespace Video_Club
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(10)))), ((int)(((byte)(60)))));
+            this.MenuVertical.Controls.Add(this.Panel_SubMenu);
             this.MenuVertical.Controls.Add(this.panel5);
             this.MenuVertical.Controls.Add(this.btn_Reportes);
             this.MenuVertical.Controls.Add(this.panel4);
@@ -142,6 +151,92 @@ namespace Video_Club
             this.MenuVertical.Name = "MenuVertical";
             this.MenuVertical.Size = new System.Drawing.Size(220, 615);
             this.MenuVertical.TabIndex = 2;
+            // 
+            // Panel_SubMenu
+            // 
+            this.Panel_SubMenu.Controls.Add(this.panel9);
+            this.Panel_SubMenu.Controls.Add(this.panel8);
+            this.Panel_SubMenu.Controls.Add(this.btn_RepPagos);
+            this.Panel_SubMenu.Controls.Add(this.panel7);
+            this.Panel_SubMenu.Controls.Add(this.btn_RepALquiler);
+            this.Panel_SubMenu.Controls.Add(this.btn_RepVentas);
+            this.Panel_SubMenu.Location = new System.Drawing.Point(45, 426);
+            this.Panel_SubMenu.Name = "Panel_SubMenu";
+            this.Panel_SubMenu.Size = new System.Drawing.Size(175, 145);
+            this.Panel_SubMenu.TabIndex = 0;
+            this.Panel_SubMenu.Visible = false;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.panel9.Location = new System.Drawing.Point(3, 97);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(10, 32);
+            this.panel9.TabIndex = 7;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.panel8.Location = new System.Drawing.Point(3, 50);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(10, 32);
+            this.panel8.TabIndex = 7;
+            // 
+            // btn_RepPagos
+            // 
+            this.btn_RepPagos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.btn_RepPagos.FlatAppearance.BorderSize = 0;
+            this.btn_RepPagos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
+            this.btn_RepPagos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_RepPagos.Font = new System.Drawing.Font("Broadway", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_RepPagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_RepPagos.Location = new System.Drawing.Point(13, 97);
+            this.btn_RepPagos.Name = "btn_RepPagos";
+            this.btn_RepPagos.Size = new System.Drawing.Size(162, 32);
+            this.btn_RepPagos.TabIndex = 6;
+            this.btn_RepPagos.Text = "Rep. Pagos";
+            this.btn_RepPagos.UseVisualStyleBackColor = false;
+            this.btn_RepPagos.Click += new System.EventHandler(this.btn_RepPagos_Click);
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.panel7.Location = new System.Drawing.Point(3, 3);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(10, 32);
+            this.panel7.TabIndex = 5;
+            // 
+            // btn_RepALquiler
+            // 
+            this.btn_RepALquiler.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.btn_RepALquiler.FlatAppearance.BorderSize = 0;
+            this.btn_RepALquiler.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
+            this.btn_RepALquiler.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_RepALquiler.Font = new System.Drawing.Font("Broadway", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_RepALquiler.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_RepALquiler.Location = new System.Drawing.Point(13, 50);
+            this.btn_RepALquiler.Name = "btn_RepALquiler";
+            this.btn_RepALquiler.Size = new System.Drawing.Size(162, 32);
+            this.btn_RepALquiler.TabIndex = 6;
+            this.btn_RepALquiler.Text = "Rep. Alquiler";
+            this.btn_RepALquiler.UseVisualStyleBackColor = false;
+            this.btn_RepALquiler.Click += new System.EventHandler(this.btn_RepALquiler_Click);
+            // 
+            // btn_RepVentas
+            // 
+            this.btn_RepVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.btn_RepVentas.FlatAppearance.BorderSize = 0;
+            this.btn_RepVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
+            this.btn_RepVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_RepVentas.Font = new System.Drawing.Font("Broadway", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_RepVentas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_RepVentas.Location = new System.Drawing.Point(13, 3);
+            this.btn_RepVentas.Name = "btn_RepVentas";
+            this.btn_RepVentas.Size = new System.Drawing.Size(162, 32);
+            this.btn_RepVentas.TabIndex = 4;
+            this.btn_RepVentas.Text = "Rep. Ventas";
+            this.btn_RepVentas.UseVisualStyleBackColor = false;
+            this.btn_RepVentas.Click += new System.EventHandler(this.btn_RepVentas_Click);
             // 
             // panel5
             // 
@@ -166,6 +261,7 @@ namespace Video_Club
             this.btn_Reportes.TabIndex = 9;
             this.btn_Reportes.Text = "Reportes";
             this.btn_Reportes.UseVisualStyleBackColor = false;
+            this.btn_Reportes.Click += new System.EventHandler(this.btn_Reportes_Click);
             // 
             // panel4
             // 
@@ -300,6 +396,7 @@ namespace Video_Club
             ((System.ComponentModel.ISupportInitialize)(this.PicMax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicSalir)).EndInit();
             this.MenuVertical.ResumeLayout(false);
+            this.Panel_SubMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -325,6 +422,13 @@ namespace Video_Club
         private System.Windows.Forms.Button btn_Socios;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btn_Clientes;
+        private System.Windows.Forms.Panel Panel_SubMenu;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button btn_RepPagos;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button btn_RepALquiler;
+        private System.Windows.Forms.Button btn_RepVentas;
     }
 }
 

@@ -59,5 +59,25 @@ namespace Video_Club
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
+
+        private void btn_Reportes_Click(object sender, EventArgs e)
+        {
+            Panel_SubMenu.Visible = true;
+        }
+
+        private void btn_RepVentas_Click(object sender, EventArgs e)
+        {
+            Panel_SubMenu.Visible = false;
+        }
+
+        private void btn_RepALquiler_Click(object sender, EventArgs e)
+        {
+            Panel_SubMenu.Visible = false;
+        }
+
+        private void btn_RepPagos_Click(object sender, EventArgs e)
+        {
+            Panel_SubMenu.Visible = false;
+        }
     }
 }

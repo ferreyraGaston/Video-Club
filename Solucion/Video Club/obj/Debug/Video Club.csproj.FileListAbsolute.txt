@@ -8,3 +8,8 @@ G:\programacion\video club\Solucion\Video Club\obj\Debug\Video Club.csproj.Gener
 G:\programacion\video club\Solucion\Video Club\obj\Debug\Video Club.csproj.CoreCompileInputs.cache
 G:\programacion\video club\Solucion\Video Club\obj\Debug\Video Club.exe
 G:\programacion\video club\Solucion\Video Club\obj\Debug\Video Club.pdb
+G:\programacion\video club\Solucion\Video Club\obj\Debug\Video_Club.clientes.resources
+G:\programacion\video club\Solucion\Video Club\obj\Debug\Video_Club.compras.resources
+G:\programacion\video club\Solucion\Video Club\obj\Debug\Video_Club.inicio.resources
+G:\programacion\video club\Solucion\Video Club\obj\Debug\Video_Club.socios.resources
+G:\programacion\video club\Solucion\Video Club\obj\Debug\Video_Club.ventas.resources
