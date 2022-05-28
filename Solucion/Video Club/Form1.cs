@@ -82,17 +82,41 @@ namespace Video_Club
 
         private void AbrirFormEnPanel(object formhija)
         {
-            if (this.PanelSalir.Controls.Count > 0)
-                this.PanelSalir.Controls.RemoveAt(0);
+            if (this.PanelSalir.Controls.Count > 0)  // pregunta si hay algun control en el interior del panel
+                this.PanelSalir.Controls.RemoveAt(0); // si hay algun control lo elimina o remueve
             Form fh = formhija as Form;
             fh.TopLevel = false;
-            fh.Dock = DockStyle.Fill;
-            this.PanelSalir.Controls.Add(fh);
-            this.PanelSalir.Tag = fh;
-            fh.Show();
+            fh.Dock = DockStyle.Fill;  // hace que se acople el formulario al contenedor
+            this.PanelSalir.Controls.Add(fh);  // agregamos el formulario al panel
+            this.PanelSalir.Tag = fh;  // establecemo la instancia como contenedor de dato al panel
+            fh.Show();  // mostramos el formulario.
 
         }
 
+        private void btn_ventas_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new ventas());
 
+        }
+
+        private void btn_Clientes_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new clientes());
+        }
+
+        private void btn_Socios_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new socios());
+        }
+
+        private void btn_Compras_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new compras());
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            AbrirFormEnPanel(new inicio());
+        }
     }
 }

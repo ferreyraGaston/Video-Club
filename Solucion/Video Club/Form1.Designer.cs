@@ -274,6 +274,7 @@ namespace Video_Club
             // btn_Compras
             // 
             this.btn_Compras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.btn_Compras.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Compras.FlatAppearance.BorderSize = 0;
             this.btn_Compras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
             this.btn_Compras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -286,6 +287,7 @@ namespace Video_Club
             this.btn_Compras.TabIndex = 7;
             this.btn_Compras.Text = "Compras";
             this.btn_Compras.UseVisualStyleBackColor = false;
+            this.btn_Compras.Click += new System.EventHandler(this.btn_Compras_Click);
             // 
             // panel3
             // 
@@ -298,6 +300,7 @@ namespace Video_Club
             // btn_Socios
             // 
             this.btn_Socios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.btn_Socios.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Socios.FlatAppearance.BorderSize = 0;
             this.btn_Socios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
             this.btn_Socios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -310,6 +313,7 @@ namespace Video_Club
             this.btn_Socios.TabIndex = 5;
             this.btn_Socios.Text = "Socios";
             this.btn_Socios.UseVisualStyleBackColor = false;
+            this.btn_Socios.Click += new System.EventHandler(this.btn_Socios_Click);
             // 
             // panel2
             // 
@@ -322,6 +326,7 @@ namespace Video_Club
             // btn_Clientes
             // 
             this.btn_Clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.btn_Clientes.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_Clientes.FlatAppearance.BorderSize = 0;
             this.btn_Clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
             this.btn_Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -334,6 +339,7 @@ namespace Video_Club
             this.btn_Clientes.TabIndex = 3;
             this.btn_Clientes.Text = "Clientes";
             this.btn_Clientes.UseVisualStyleBackColor = false;
+            this.btn_Clientes.Click += new System.EventHandler(this.btn_Clientes_Click);
             // 
             // panel1
             // 
@@ -346,6 +352,7 @@ namespace Video_Club
             // btn_ventas
             // 
             this.btn_ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.btn_ventas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_ventas.FlatAppearance.BorderSize = 0;
             this.btn_ventas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
             this.btn_ventas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -358,9 +365,11 @@ namespace Video_Club
             this.btn_ventas.TabIndex = 1;
             this.btn_ventas.Text = "Ventas";
             this.btn_ventas.UseVisualStyleBackColor = false;
+            this.btn_ventas.Click += new System.EventHandler(this.btn_ventas_Click);
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(32, 6);
             this.pictureBox1.Name = "pictureBox1";
@@ -368,6 +377,7 @@ namespace Video_Club
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // PanelSalir
             // 
