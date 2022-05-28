@@ -225,6 +225,7 @@ namespace Video_Club
             // btn_RepVentas
             // 
             this.btn_RepVentas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.btn_RepVentas.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_RepVentas.FlatAppearance.BorderSize = 0;
             this.btn_RepVentas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
             this.btn_RepVentas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

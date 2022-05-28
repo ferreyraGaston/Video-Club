@@ -68,16 +68,20 @@ namespace Video_Club
         private void btn_RepVentas_Click(object sender, EventArgs e)
         {
             Panel_SubMenu.Visible = false;
+            AbrirFormEnPanel(new RepVentas());
+
         }
 
         private void btn_RepALquiler_Click(object sender, EventArgs e)
         {
             Panel_SubMenu.Visible = false;
+            AbrirFormEnPanel(new RepAlquiler());
         }
 
         private void btn_RepPagos_Click(object sender, EventArgs e)
         {
             Panel_SubMenu.Visible = false;
+            AbrirFormEnPanel(new RepPagos());
         }
 
         private void AbrirFormEnPanel(object formhija)
