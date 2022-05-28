@@ -79,5 +79,20 @@ namespace Video_Club
         {
             Panel_SubMenu.Visible = false;
         }
+
+        private void AbrirFormEnPanel(object formhija)
+        {
+            if (this.PanelSalir.Controls.Count > 0)
+                this.PanelSalir.Controls.RemoveAt(0);
+            Form fh = formhija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.PanelSalir.Controls.Add(fh);
+            this.PanelSalir.Tag = fh;
+            fh.Show();
+
+        }
+
+
     }
 }
