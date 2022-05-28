@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proyecto C#\\PanelCentral\\PanelCentral\\PanelCentral.csproj": {}
+    "D:\\Proyecto C#\\Video Club\\PanelCentral\\PanelCentral.csproj": {}
   },
   "projects": {
-    "D:\\Proyecto C#\\PanelCentral\\PanelCentral\\PanelCentral.csproj": {
+    "D:\\Proyecto C#\\Video Club\\PanelCentral\\PanelCentral.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyecto C#\\PanelCentral\\PanelCentral\\PanelCentral.csproj",
+        "projectUniqueName": "D:\\Proyecto C#\\Video Club\\PanelCentral\\PanelCentral.csproj",
         "projectName": "PanelCentral",
-        "projectPath": "D:\\Proyecto C#\\PanelCentral\\PanelCentral\\PanelCentral.csproj",
+        "projectPath": "D:\\Proyecto C#\\Video Club\\PanelCentral\\PanelCentral.csproj",
         "packagesPath": "C:\\Users\\ferre\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyecto C#\\PanelCentral\\PanelCentral\\obj\\",
+        "outputPath": "D:\\Proyecto C#\\Video Club\\PanelCentral\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
