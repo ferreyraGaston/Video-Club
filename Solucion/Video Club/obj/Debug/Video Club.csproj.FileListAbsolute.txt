@@ -13,3 +13,6 @@ G:\programacion\video club\Solucion\Video Club\obj\Debug\Video_Club.compras.reso
 G:\programacion\video club\Solucion\Video Club\obj\Debug\Video_Club.inicio.resources
 G:\programacion\video club\Solucion\Video Club\obj\Debug\Video_Club.socios.resources
 G:\programacion\video club\Solucion\Video Club\obj\Debug\Video_Club.ventas.resources
+G:\programacion\video club\Solucion\Video Club\obj\Debug\Video_Club.RepAlquiler.resources
+G:\programacion\video club\Solucion\Video Club\obj\Debug\Video_Club.RepPagos.resources
+G:\programacion\video club\Solucion\Video Club\obj\Debug\Video_Club.RepVentas.resources
