@@ -90,6 +90,7 @@ namespace Video_Club
             this.PicRestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PicRestaurar.TabIndex = 0;
             this.PicRestaurar.TabStop = false;
+            this.PicRestaurar.Visible = false;
             this.PicRestaurar.Click += new System.EventHandler(this.PicRestaurar_Click);
             // 
             // PicMin
