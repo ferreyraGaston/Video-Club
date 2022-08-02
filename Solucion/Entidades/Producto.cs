@@ -8,7 +8,7 @@ namespace Entidades
 {
     internal class Producto
     {
-
+        #region Atributos
         /***************DEFINO LOS ATRIBUTOS*******************/
 
         //agrego el modificador de acceso private para resetar el 
@@ -17,7 +17,8 @@ namespace Entidades
         private string descripcion;
         private int stock;
         private double precio;
-
+        #endregion
+        #region Constructor
         /**********DEFINO EL CONSTRUCTOR POR DEFECTO**********/
         // por lo general son publicos y llevan el nombre de la clase
 
@@ -35,7 +36,8 @@ namespace Entidades
             this.precio = precio;
             this.stock = 0;
         }
-
+        #endregion
+        #region Constructor
         /**********CREO UN METODO INGRESO**********/
         // Para ingresar datos al stock
 
@@ -51,6 +53,6 @@ namespace Entidades
         {
             this.stock = this.stock - cantidad;
         }
-
+        #endregion
     }
 }
