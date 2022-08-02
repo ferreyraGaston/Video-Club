@@ -34,9 +34,9 @@ namespace Video_Club
 
             MessageBox.Show("Producto instanciado");
 
-            lbl_codigo.Text=NuevoProd.p_codigo.ToString();
-            lbl_descripcion.Text = NuevoProd.p_descripcion;
-            lbl_sotck.Text=NuevoProd.p_precio.ToString();
+            lbl_codigo.Text = "Código: " + NuevoProd.p_codigo.ToString();
+            lbl_descripcion.Text = "Descripción: " + NuevoProd.p_descripcion;
+            lbl_sotck.Text="Stock: " + NuevoProd.p_precio.ToString();
 
 
         }

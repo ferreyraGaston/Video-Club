@@ -45,8 +45,20 @@ namespace Video_Club
             this.textStock = new System.Windows.Forms.TextBox();
             this.textPrecio = new System.Windows.Forms.TextBox();
             this.textCantidad = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pnl_opciones = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_Compras = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_Socios = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btn_Clientes = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.btn_ventas = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.pnl_opciones.SuspendLayout();
             this.SuspendLayout();
             // 
             // agregar
@@ -193,12 +205,135 @@ namespace Video_Club
             this.textCantidad.Size = new System.Drawing.Size(100, 20);
             this.textCantidad.TabIndex = 8;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(12, 138);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(440, 300);
+            this.dataGridView1.TabIndex = 3;
+            // 
+            // pnl_opciones
+            // 
+            this.pnl_opciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(2)))), ((int)(((byte)(73)))));
+            this.pnl_opciones.Controls.Add(this.panel4);
+            this.pnl_opciones.Controls.Add(this.btn_ventas);
+            this.pnl_opciones.Controls.Add(this.btn_Compras);
+            this.pnl_opciones.Controls.Add(this.panel6);
+            this.pnl_opciones.Controls.Add(this.panel3);
+            this.pnl_opciones.Controls.Add(this.btn_Clientes);
+            this.pnl_opciones.Controls.Add(this.btn_Socios);
+            this.pnl_opciones.Controls.Add(this.panel5);
+            this.pnl_opciones.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnl_opciones.Location = new System.Drawing.Point(884, 0);
+            this.pnl_opciones.Name = "pnl_opciones";
+            this.pnl_opciones.Size = new System.Drawing.Size(200, 450);
+            this.pnl_opciones.TabIndex = 4;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.panel4.Location = new System.Drawing.Point(2, 236);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(10, 32);
+            this.panel4.TabIndex = 16;
+            // 
+            // btn_Compras
+            // 
+            this.btn_Compras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.btn_Compras.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Compras.FlatAppearance.BorderSize = 0;
+            this.btn_Compras.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
+            this.btn_Compras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Compras.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Compras.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Compras.Location = new System.Drawing.Point(12, 236);
+            this.btn_Compras.Name = "btn_Compras";
+            this.btn_Compras.Size = new System.Drawing.Size(185, 32);
+            this.btn_Compras.TabIndex = 15;
+            this.btn_Compras.Text = "Nuevo";
+            this.btn_Compras.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.panel3.Location = new System.Drawing.Point(2, 187);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(10, 32);
+            this.panel3.TabIndex = 14;
+            // 
+            // btn_Socios
+            // 
+            this.btn_Socios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.btn_Socios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Socios.FlatAppearance.BorderSize = 0;
+            this.btn_Socios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
+            this.btn_Socios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Socios.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Socios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Socios.Location = new System.Drawing.Point(12, 187);
+            this.btn_Socios.Name = "btn_Socios";
+            this.btn_Socios.Size = new System.Drawing.Size(185, 32);
+            this.btn_Socios.TabIndex = 13;
+            this.btn_Socios.Text = "ELiminar";
+            this.btn_Socios.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.panel5.Location = new System.Drawing.Point(2, 138);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(10, 32);
+            this.panel5.TabIndex = 12;
+            // 
+            // btn_Clientes
+            // 
+            this.btn_Clientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.btn_Clientes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_Clientes.FlatAppearance.BorderSize = 0;
+            this.btn_Clientes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
+            this.btn_Clientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Clientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Clientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Clientes.Location = new System.Drawing.Point(12, 138);
+            this.btn_Clientes.Name = "btn_Clientes";
+            this.btn_Clientes.Size = new System.Drawing.Size(185, 32);
+            this.btn_Clientes.TabIndex = 11;
+            this.btn_Clientes.Text = "Modificar";
+            this.btn_Clientes.UseVisualStyleBackColor = false;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.panel6.Location = new System.Drawing.Point(2, 87);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(10, 32);
+            this.panel6.TabIndex = 10;
+            // 
+            // btn_ventas
+            // 
+            this.btn_ventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.btn_ventas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_ventas.FlatAppearance.BorderSize = 0;
+            this.btn_ventas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
+            this.btn_ventas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_ventas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ventas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_ventas.Location = new System.Drawing.Point(12, 87);
+            this.btn_ventas.Name = "btn_ventas";
+            this.btn_ventas.Size = new System.Drawing.Size(185, 32);
+            this.btn_ventas.TabIndex = 9;
+            this.btn_ventas.Text = "Agregar";
+            this.btn_ventas.UseVisualStyleBackColor = false;
+            // 
             // ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1084, 450);
+            this.Controls.Add(this.pnl_opciones);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.agregar);
@@ -209,6 +344,8 @@ namespace Video_Club
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.pnl_opciones.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -231,5 +368,15 @@ namespace Video_Club
         private System.Windows.Forms.TextBox textDescripcion;
         private System.Windows.Forms.TextBox textCodigo;
         private System.Windows.Forms.TextBox textCantidad;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel pnl_opciones;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button btn_ventas;
+        private System.Windows.Forms.Button btn_Compras;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btn_Clientes;
+        private System.Windows.Forms.Button btn_Socios;
+        private System.Windows.Forms.Panel panel5;
     }
 }
