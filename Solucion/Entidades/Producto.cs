@@ -20,8 +20,42 @@ namespace Entidades
         private int codigo;
         private string descripcion;
         private int stock;
-        private double precio;
+        private int precio;
         #endregion
+
+        #region Propiedades
+        /***************DEFINO LAS PROPIEDADES*******************/
+
+        // para poder acceder desde otra clase, necesito crear propiedades
+        // para extraer las variables de tipo private
+        // esta propiedad sirve para manupular el codigo
+        public int p_codigo
+        {
+            set { this.codigo = value;}
+            get { return this.codigo; }
+        }
+        public String p_descripcion
+        {
+            set { this.descripcion = value; }
+            get { return this.descripcion; }
+        }
+
+        // El stock no se va  a modificar desde afuera, lo va a hacer
+        // desde los metodos que estan dentro de la clase
+        public int p_stock
+        {
+         // set { this.stock = value;}
+            get { return this.stock; }
+        }
+        public int p_precio
+        {
+            set { this.precio = value;} 
+            get { return this.precio; }
+        }
+    
+
+        #endregion
+
         #region Constructor
         /**********DEFINO EL CONSTRUCTOR POR DEFECTO**********/
         // por lo general son publicos y llevan el nombre de la clase

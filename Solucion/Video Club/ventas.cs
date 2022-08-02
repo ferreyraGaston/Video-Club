@@ -32,6 +32,8 @@ namespace Video_Club
 
             NuevoProd = new Producto(int.Parse(textCodigo.Text), textDescripcion.Text, int.Parse(textPrecio.Text));
 
+            MessageBox.Show("Producto instanciado");
+
         }
 
   

@@ -35,3 +35,6 @@ C:\Users\ferre\Source\Repos\Video-Club\Solucion\Video Club\obj\Debug\Video Club.
 C:\Users\ferre\Source\Repos\Video-Club\Solucion\Video Club\obj\Debug\Video Club.csproj.CoreCompileInputs.cache
 C:\Users\ferre\Source\Repos\Video-Club\Solucion\Video Club\obj\Debug\Video Club.exe
 C:\Users\ferre\Source\Repos\Video-Club\Solucion\Video Club\obj\Debug\Video Club.pdb
+C:\Users\ferre\Source\Repos\Video-Club\Solucion\Video Club\bin\Debug\Entidades.dll
+C:\Users\ferre\Source\Repos\Video-Club\Solucion\Video Club\bin\Debug\Entidades.pdb
+C:\Users\ferre\Source\Repos\Video-Club\Solucion\Video Club\obj\Debug\Video Club.csproj.CopyComplete
