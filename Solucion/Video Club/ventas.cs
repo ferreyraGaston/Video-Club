@@ -13,6 +13,8 @@ namespace Video_Club
 {
     public partial class ventas : Form
     {
+
+        int i = 0;
         public ventas()
         {
             InitializeComponent();
@@ -34,13 +36,30 @@ namespace Video_Club
 
             MessageBox.Show("Producto instanciado");
 
-            lbl_codigo.Text = "Código: " + NuevoProd.p_codigo.ToString();
-            lbl_descripcion.Text = "Descripción: " + NuevoProd.p_descripcion;
-            lbl_sotck.Text="Stock: " + NuevoProd.p_precio.ToString();
+            //lbl_codigo.Text = "Código: " + NuevoProd.p_codigo.ToString();
+            //lbl_descripcion.Text = "Descripción: " + NuevoProd.p_descripcion;
+            //lbl_sotck.Text="Stock: " + NuevoProd.p_precio.ToString();
 
+            string v_codigo, v_descripcion, v_stock, v_precio;
+
+            v_codigo = textCodigo.Text;
+            v_descripcion = textDescripcion.Text;
+            v_stock = textStock.Text;
+            v_precio = textPrecio.Text;
+
+            dgv_detalle.Rows.Add(i+"", v_codigo, v_descripcion, v_stock, v_precio);
+            i=i+1;
+            limpiar();
+            textCodigo.Focus();
 
         }
-
+       void limpiar()
+        {
+            textCodigo.Text="";
+            textDescripcion.Text = "";
+            textStock.Text = "";
+            textPrecio.Text = "";
+        }
   
     }
 }
