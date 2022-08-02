@@ -18,9 +18,22 @@ namespace Video_Club
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+    
+
+        private void agregar_Click(object sender, EventArgs e)
         {
-            Prod
+            /**********DECLARO LA CLASE**********/
+     
+            Producto NuevoProd;
+
+            /**********DEFINO EL CONSTRUCTOR**********/
+            // el contructor espera un entero pero el textbox
+            // devuelve un String hay que convertirlo a numero con int.Parse(textbox.text)
+
+            NuevoProd = new Producto(int.Parse(textCodigo.Text), textDescripcion.Text, int.Parse(textPrecio.Text));
+
         }
+
+  
     }
 }
