@@ -32,8 +32,24 @@ namespace Entidades
         {
             this.codigo = codigo;          
             this.descripcion = descripcion;
-            this.precio = precio;   
+            this.precio = precio;
+            this.stock = 0;
+        }
 
+        /**********CREO UN METODO INGRESO**********/
+        // Para ingresar datos al stock
+
+        public void Ingreso(int cantidad)
+        {
+            this.stock = this.stock + cantidad;
+        }
+
+        /**********CREO UN METODO INGRESO**********/
+        // Para egresar datos al stock
+
+        public void Engreso(int cantidad)
+        {
+            this.stock = this.stock - cantidad;
         }
 
     }
