@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    internal class Producto
+    // el modificador de acceso por defecto es internal.
+    // necesito cambiar el modificador de acceso
+    // por publico para que se pueda visualizar
+
+    public class Producto
     {
         #region Atributos
         /***************DEFINO LOS ATRIBUTOS*******************/
@@ -37,7 +41,7 @@ namespace Entidades
             this.stock = 0;
         }
         #endregion
-        #region Constructor
+        #region Metodos
         /**********CREO UN METODO INGRESO**********/
         // Para ingresar datos al stock
 
