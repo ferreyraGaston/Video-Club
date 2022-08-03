@@ -40,22 +40,7 @@ namespace Video_Club
 
         private void btn_agregar_Click(object sender, EventArgs e)
         {
-            /**********DECLARO LA CLASE**********/
-
-            Producto NuevoProd;
-
-            /**********DEFINO EL CONSTRUCTOR**********/
-            // el contructor espera un entero pero el textbox
-            // devuelve un String hay que convertirlo a numero con int.Parse(textbox.text)
-
-            //NuevoProd = new Producto(int.Parse(textCodigo.Text), textDescripcion.Text, int.Parse(textPrecio.Text));
-
-           // MessageBox.Show("Producto instanciado");
-
-            //lbl_codigo.Text = "Código: " + NuevoProd.p_codigo.ToString();
-            //lbl_descripcion.Text = "Descripción: " + NuevoProd.p_descripcion;
-            //lbl_sotck.Text="Stock: " + NuevoProd.p_precio.ToString();
-
+           
             string v_codigo, v_descripcion, v_stock, v_precio;
 
             v_codigo = textCodigo.Text;
