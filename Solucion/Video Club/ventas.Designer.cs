@@ -127,6 +127,7 @@ namespace Video_Club
             this.dgv_detalle.Name = "dgv_detalle";
             this.dgv_detalle.Size = new System.Drawing.Size(666, 291);
             this.dgv_detalle.TabIndex = 3;
+            this.dgv_detalle.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_detalle_CellContentClick);
             // 
             // textCantidad
             // 
@@ -254,6 +255,7 @@ namespace Video_Club
             this.btn_modificar.TabIndex = 11;
             this.btn_modificar.Text = "Modificar";
             this.btn_modificar.UseVisualStyleBackColor = false;
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
             // btn_eliminar
             // 
