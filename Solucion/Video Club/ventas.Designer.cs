@@ -101,6 +101,7 @@ namespace Video_Club
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
             this.panel2.Controls.Add(this.textPrecio);
             this.panel2.Controls.Add(this.dgv_detalle);
             this.panel2.Controls.Add(this.textCantidad);
@@ -127,6 +128,7 @@ namespace Video_Club
             // 
             // dgv_detalle
             // 
+            this.dgv_detalle.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(2)))), ((int)(((byte)(73)))));
             this.dgv_detalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_detalle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id,
