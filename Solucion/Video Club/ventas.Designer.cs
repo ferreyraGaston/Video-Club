@@ -223,6 +223,7 @@ namespace Video_Club
             this.btn_nuevo.TabIndex = 15;
             this.btn_nuevo.Text = "Nuevo";
             this.btn_nuevo.UseVisualStyleBackColor = false;
+            this.btn_nuevo.Click += new System.EventHandler(this.btn_nuevo_Click);
             // 
             // panel6
             // 
@@ -272,6 +273,7 @@ namespace Video_Club
             this.btn_eliminar.TabIndex = 13;
             this.btn_eliminar.Text = "ELiminar";
             this.btn_eliminar.UseVisualStyleBackColor = false;
+            this.btn_eliminar.Click += new System.EventHandler(this.btn_eliminar_Click);
             // 
             // panel5
             // 

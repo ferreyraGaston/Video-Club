@@ -95,6 +95,31 @@ namespace Video_Club
             dgv_detalle[4, posicion].Value = textPrecio.Text;
 
             limpiar();
+            btn_eliminar.Enabled = false;
+            btn_modificar.Enabled = false;
+            btn_agregar.Enabled = true;
+            btn_nuevo.Enabled = true;
+            textCodigo.Focus();
+        }
+
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+            dgv_detalle.Rows.RemoveAt(posicion);
+            limpiar();
+            btn_eliminar.Enabled = false;
+            btn_modificar.Enabled = false;
+            btn_agregar.Enabled = true;
+            btn_nuevo.Enabled = true;
+            textCodigo.Focus();
+        }
+
+        private void btn_nuevo_Click(object sender, EventArgs e)
+        {
+            limpiar();
+            btn_eliminar.Enabled = false;
+            btn_modificar.Enabled = false;
+            btn_agregar.Enabled = true;
+            btn_nuevo.Enabled = true;
             textCodigo.Focus();
         }
     }
