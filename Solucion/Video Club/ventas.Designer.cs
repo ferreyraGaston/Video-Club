@@ -29,28 +29,27 @@ namespace Video_Club
         /// </summary>
         private void InitializeComponent()
         {
-            this.agregar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textCodigo = new System.Windows.Forms.TextBox();
-            this.textDescripcion = new System.Windows.Forms.TextBox();
-            this.textStock = new System.Windows.Forms.TextBox();
             this.textPrecio = new System.Windows.Forms.TextBox();
-            this.textCantidad = new System.Windows.Forms.TextBox();
             this.dgv_detalle = new System.Windows.Forms.DataGridView();
+            this.textCantidad = new System.Windows.Forms.TextBox();
+            this.textStock = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textDescripcion = new System.Windows.Forms.TextBox();
+            this.textCodigo = new System.Windows.Forms.TextBox();
             this.pnl_opciones = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.btn_agregar = new System.Windows.Forms.Button();
             this.btn_nuevo = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_modificar = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btn_modificar = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btn_agregar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_titulo = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
@@ -58,16 +57,6 @@ namespace Video_Club
             this.pnl_opciones.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // agregar
-            // 
-            this.agregar.Location = new System.Drawing.Point(761, 16);
-            this.agregar.Name = "agregar";
-            this.agregar.Size = new System.Drawing.Size(100, 32);
-            this.agregar.TabIndex = 0;
-            this.agregar.Text = "Guardar";
-            this.agregar.UseVisualStyleBackColor = true;
-            this.agregar.Click += new System.EventHandler(this.agregar_Click);
             // 
             // label8
             // 
@@ -110,7 +99,6 @@ namespace Video_Club
             this.panel2.Controls.Add(this.textPrecio);
             this.panel2.Controls.Add(this.dgv_detalle);
             this.panel2.Controls.Add(this.textCantidad);
-            this.panel2.Controls.Add(this.agregar);
             this.panel2.Controls.Add(this.textStock);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.textDescripcion);
@@ -125,6 +113,35 @@ namespace Video_Club
             this.panel2.Size = new System.Drawing.Size(1084, 418);
             this.panel2.TabIndex = 2;
             // 
+            // textPrecio
+            // 
+            this.textPrecio.Location = new System.Drawing.Point(120, 77);
+            this.textPrecio.Name = "textPrecio";
+            this.textPrecio.Size = new System.Drawing.Size(100, 20);
+            this.textPrecio.TabIndex = 11;
+            // 
+            // dgv_detalle
+            // 
+            this.dgv_detalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_detalle.Location = new System.Drawing.Point(18, 115);
+            this.dgv_detalle.Name = "dgv_detalle";
+            this.dgv_detalle.Size = new System.Drawing.Size(666, 291);
+            this.dgv_detalle.TabIndex = 3;
+            // 
+            // textCantidad
+            // 
+            this.textCantidad.Location = new System.Drawing.Point(364, 45);
+            this.textCantidad.Name = "textCantidad";
+            this.textCantidad.Size = new System.Drawing.Size(100, 20);
+            this.textCantidad.TabIndex = 8;
+            // 
+            // textStock
+            // 
+            this.textStock.Location = new System.Drawing.Point(120, 45);
+            this.textStock.Name = "textStock";
+            this.textStock.Size = new System.Drawing.Size(100, 20);
+            this.textStock.TabIndex = 10;
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -134,13 +151,6 @@ namespace Video_Club
             this.label7.TabIndex = 7;
             this.label7.Text = "CANTIDAD";
             // 
-            // textCodigo
-            // 
-            this.textCodigo.Location = new System.Drawing.Point(120, 16);
-            this.textCodigo.Name = "textCodigo";
-            this.textCodigo.Size = new System.Drawing.Size(100, 20);
-            this.textCodigo.TabIndex = 8;
-            // 
             // textDescripcion
             // 
             this.textDescripcion.Location = new System.Drawing.Point(364, 16);
@@ -148,34 +158,12 @@ namespace Video_Club
             this.textDescripcion.Size = new System.Drawing.Size(100, 20);
             this.textDescripcion.TabIndex = 9;
             // 
-            // textStock
+            // textCodigo
             // 
-            this.textStock.Location = new System.Drawing.Point(120, 45);
-            this.textStock.Name = "textStock";
-            this.textStock.Size = new System.Drawing.Size(100, 20);
-            this.textStock.TabIndex = 10;
-            // 
-            // textPrecio
-            // 
-            this.textPrecio.Location = new System.Drawing.Point(120, 77);
-            this.textPrecio.Name = "textPrecio";
-            this.textPrecio.Size = new System.Drawing.Size(100, 20);
-            this.textPrecio.TabIndex = 11;
-            // 
-            // textCantidad
-            // 
-            this.textCantidad.Location = new System.Drawing.Point(364, 45);
-            this.textCantidad.Name = "textCantidad";
-            this.textCantidad.Size = new System.Drawing.Size(100, 20);
-            this.textCantidad.TabIndex = 8;
-            // 
-            // dgv_detalle
-            // 
-            this.dgv_detalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_detalle.Location = new System.Drawing.Point(18, 115);
-            this.dgv_detalle.Name = "dgv_detalle";
-            this.dgv_detalle.Size = new System.Drawing.Size(666, 291);
-            this.dgv_detalle.TabIndex = 3;
+            this.textCodigo.Location = new System.Drawing.Point(120, 16);
+            this.textCodigo.Name = "textCodigo";
+            this.textCodigo.Size = new System.Drawing.Size(100, 20);
+            this.textCodigo.TabIndex = 8;
             // 
             // pnl_opciones
             // 
@@ -202,6 +190,23 @@ namespace Video_Club
             this.panel4.Size = new System.Drawing.Size(10, 32);
             this.panel4.TabIndex = 16;
             // 
+            // btn_agregar
+            // 
+            this.btn_agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.btn_agregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_agregar.FlatAppearance.BorderSize = 0;
+            this.btn_agregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
+            this.btn_agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_agregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_agregar.Location = new System.Drawing.Point(12, 87);
+            this.btn_agregar.Name = "btn_agregar";
+            this.btn_agregar.Size = new System.Drawing.Size(185, 32);
+            this.btn_agregar.TabIndex = 9;
+            this.btn_agregar.Text = "Agregar";
+            this.btn_agregar.UseVisualStyleBackColor = false;
+            this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
+            // 
             // btn_nuevo
             // 
             this.btn_nuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
@@ -218,6 +223,14 @@ namespace Video_Club
             this.btn_nuevo.Text = "Nuevo";
             this.btn_nuevo.UseVisualStyleBackColor = false;
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.panel6.Location = new System.Drawing.Point(2, 87);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(10, 32);
+            this.panel6.TabIndex = 10;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
@@ -225,6 +238,22 @@ namespace Video_Club
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(10, 32);
             this.panel3.TabIndex = 14;
+            // 
+            // btn_modificar
+            // 
+            this.btn_modificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
+            this.btn_modificar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_modificar.FlatAppearance.BorderSize = 0;
+            this.btn_modificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
+            this.btn_modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_modificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_modificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_modificar.Location = new System.Drawing.Point(12, 138);
+            this.btn_modificar.Name = "btn_modificar";
+            this.btn_modificar.Size = new System.Drawing.Size(185, 32);
+            this.btn_modificar.TabIndex = 11;
+            this.btn_modificar.Text = "Modificar";
+            this.btn_modificar.UseVisualStyleBackColor = false;
             // 
             // btn_eliminar
             // 
@@ -249,46 +278,6 @@ namespace Video_Club
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(10, 32);
             this.panel5.TabIndex = 12;
-            // 
-            // btn_modificar
-            // 
-            this.btn_modificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
-            this.btn_modificar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_modificar.FlatAppearance.BorderSize = 0;
-            this.btn_modificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
-            this.btn_modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_modificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_modificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_modificar.Location = new System.Drawing.Point(12, 138);
-            this.btn_modificar.Name = "btn_modificar";
-            this.btn_modificar.Size = new System.Drawing.Size(185, 32);
-            this.btn_modificar.TabIndex = 11;
-            this.btn_modificar.Text = "Modificar";
-            this.btn_modificar.UseVisualStyleBackColor = false;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
-            this.panel6.Location = new System.Drawing.Point(2, 87);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(10, 32);
-            this.panel6.TabIndex = 10;
-            // 
-            // btn_agregar
-            // 
-            this.btn_agregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(16)))), ((int)(((byte)(121)))));
-            this.btn_agregar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_agregar.FlatAppearance.BorderSize = 0;
-            this.btn_agregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
-            this.btn_agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_agregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_agregar.Location = new System.Drawing.Point(12, 87);
-            this.btn_agregar.Name = "btn_agregar";
-            this.btn_agregar.Size = new System.Drawing.Size(185, 32);
-            this.btn_agregar.TabIndex = 9;
-            this.btn_agregar.Text = "Agregar";
-            this.btn_agregar.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -331,8 +320,6 @@ namespace Video_Club
         }
 
         #endregion
-
-        private System.Windows.Forms.Button agregar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

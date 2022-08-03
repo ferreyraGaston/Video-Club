@@ -20,12 +20,18 @@ namespace Video_Club
             InitializeComponent();
         }
 
-    
+       void limpiar()
+        {
+            textCodigo.Text="";
+            textDescripcion.Text = "";
+            textStock.Text = "";
+            textPrecio.Text = "";
+        }
 
-        private void agregar_Click(object sender, EventArgs e)
+        private void btn_agregar_Click(object sender, EventArgs e)
         {
             /**********DECLARO LA CLASE**********/
-     
+
             Producto NuevoProd;
 
             /**********DEFINO EL CONSTRUCTOR**********/
@@ -47,19 +53,10 @@ namespace Video_Club
             v_stock = textStock.Text;
             v_precio = textPrecio.Text;
 
-            dgv_detalle.Rows.Add(i+"", v_codigo, v_descripcion, v_stock, v_precio);
-            i=i+1;
+            dgv_detalle.Rows.Add(i + "", v_codigo, v_descripcion, v_stock, v_precio);
+            i = i + 1;
             limpiar();
             textCodigo.Focus();
-
         }
-       void limpiar()
-        {
-            textCodigo.Text="";
-            textDescripcion.Text = "";
-            textStock.Text = "";
-            textPrecio.Text = "";
-        }
-  
     }
 }
