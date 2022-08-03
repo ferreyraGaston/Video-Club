@@ -63,16 +63,14 @@ namespace Video_Club
             textStock.Text = dgv_detalle[3, posicion].Value.ToString();
             textPrecio.Text = dgv_detalle[4, posicion].Value.ToString();
             btn_eliminar.Enabled = true;
-            btn_eliminar.BackColor = Color.FromArgb(169, 16, 121);
             btn_modificar.Enabled = true;
-            btn_modificar.BackColor = Color.FromArgb(169, 16, 121);
             btn_agregar.Enabled = false;
-            btn_nuevo.Enabled = false;
+            btn_nuevo.Enabled = true;
 
             btn_eliminar.BackColor = Color.FromArgb(169, 16, 121);
             btn_modificar.BackColor = Color.FromArgb(169, 16, 121);
             btn_agregar.BackColor = Color.FromArgb(87, 10, 87);
-            btn_nuevo.BackColor = Color.FromArgb(87, 10, 87);
+            btn_nuevo.BackColor = Color.FromArgb(169, 16, 121);
             textCodigo.Focus();
         }
 
