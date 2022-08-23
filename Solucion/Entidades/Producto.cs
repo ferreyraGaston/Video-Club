@@ -74,6 +74,8 @@ namespace Entidades
             this.precio = precio;
             this.stock = 0;
         }
+
+     
         #endregion
         #region Metodos
         /**********CREO UN METODO INGRESO**********/

@@ -101,6 +101,7 @@ namespace Video_Club
         {
             AbrirFormEnPanel(new ventas());
 
+
         }
 
         private void btn_Clientes_Click(object sender, EventArgs e)

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -131,5 +132,33 @@ namespace Video_Club
             btn_nuevo.BackColor = Color.FromArgb(169, 16, 121);
             textCodigo.Focus();
         }
+
+        private void ventas_Load(object sender, EventArgs e)
+        {
+            string cadena = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\\BD Toldito\\Prueba\\BD\\toldito_pba.mdb;User Id=admin;Password=;";
+            OleDbConnection con = new OleDbConnection(cadena);
+            con.Open();
+            string sql = "select * from Factura";
+            OleDbDataAdapter da = new OleDbDataAdapter(sql, cadena);
+            DataTable dt = new DataTable();
+            con.Close();
+            da.Fill(dt);
+            dgv_detalle.DataSource = dt;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string cadena = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\\BD Toldito\\Prueba\\BD\\Toldito_pba.mdb";
+            OleDbConnection con = new OleDbConnection(cadena);
+            con.Open();
+            string sql = "select * from Factura";
+            OleDbDataAdapter da = new OleDbDataAdapter(sql, cadena);
+            DataTable dt = new DataTable();
+            con.Close();
+            da.Fill(dt);
+            dgv_detalle.DataSource = dt;
+        }
+
+
     }
 }
