@@ -36,11 +36,6 @@ namespace Video_Club
             this.panel2 = new System.Windows.Forms.Panel();
             this.textPrecio = new System.Windows.Forms.TextBox();
             this.dgv_detalle = new System.Windows.Forms.DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textCantidad = new System.Windows.Forms.TextBox();
             this.textStock = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -57,7 +52,6 @@ namespace Video_Club
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_titulo = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle)).BeginInit();
             this.pnl_opciones.SuspendLayout();
@@ -103,7 +97,6 @@ namespace Video_Club
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.textPrecio);
             this.panel2.Controls.Add(this.dgv_detalle);
             this.panel2.Controls.Add(this.textCantidad);
@@ -132,44 +125,11 @@ namespace Video_Club
             // 
             this.dgv_detalle.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(2)))), ((int)(((byte)(73)))));
             this.dgv_detalle.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_detalle.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.Codigo,
-            this.Descripcion,
-            this.Stock,
-            this.Precio});
             this.dgv_detalle.Location = new System.Drawing.Point(18, 115);
             this.dgv_detalle.Name = "dgv_detalle";
             this.dgv_detalle.Size = new System.Drawing.Size(843, 291);
             this.dgv_detalle.TabIndex = 3;
             this.dgv_detalle.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_detalle_CellContentClick);
-            // 
-            // id
-            // 
-            this.id.HeaderText = "ID";
-            this.id.Name = "id";
-            this.id.Width = 50;
-            // 
-            // Codigo
-            // 
-            this.Codigo.HeaderText = "Código";
-            this.Codigo.Name = "Codigo";
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.HeaderText = "Descripción";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.Width = 450;
-            // 
-            // Stock
-            // 
-            this.Stock.HeaderText = "Strock";
-            this.Stock.Name = "Stock";
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.Name = "Precio";
             // 
             // textCantidad
             // 
@@ -224,7 +184,6 @@ namespace Video_Club
             this.pnl_opciones.Name = "pnl_opciones";
             this.pnl_opciones.Size = new System.Drawing.Size(200, 418);
             this.pnl_opciones.TabIndex = 4;
-
             // 
             // panel4
             // 
@@ -344,16 +303,6 @@ namespace Video_Club
             this.lbl_titulo.TabIndex = 0;
             this.lbl_titulo.Text = "Ventas o Alquileres";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(657, 34);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -401,11 +350,5 @@ namespace Video_Club
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_titulo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Stock;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
-        private System.Windows.Forms.Button button1;
     }
 }
