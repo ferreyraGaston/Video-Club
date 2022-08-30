@@ -38,3 +38,5 @@ C:\Users\ferre\Source\Repos\Video-Club\Solucion\Video Club\obj\Debug\Video Club.
 C:\Users\ferre\Source\Repos\Video-Club\Solucion\Video Club\bin\Debug\Entidades.dll
 C:\Users\ferre\Source\Repos\Video-Club\Solucion\Video Club\bin\Debug\Entidades.pdb
 C:\Users\ferre\Source\Repos\Video-Club\Solucion\Video Club\obj\Debug\Video Club.csproj.CopyComplete
+C:\Users\ferre\source\repos\Video-Club\Solucion\Video Club\bin\Debug\CapaDatos.dll
+C:\Users\ferre\source\repos\Video-Club\Solucion\Video Club\bin\Debug\CapaDatos.pdb

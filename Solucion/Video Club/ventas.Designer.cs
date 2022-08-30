@@ -50,8 +50,8 @@ namespace Video_Club
             this.btn_modificar = new System.Windows.Forms.Button();
             this.btn_eliminar = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.lbl_titulo = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_detalle)).BeginInit();
             this.pnl_opciones.SuspendLayout();
@@ -113,6 +113,7 @@ namespace Video_Club
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1084, 418);
             this.panel2.TabIndex = 2;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // textPrecio
             // 
@@ -285,15 +286,6 @@ namespace Video_Club
             this.panel5.Size = new System.Drawing.Size(10, 32);
             this.panel5.TabIndex = 12;
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.lbl_titulo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1084, 32);
-            this.panel1.TabIndex = 1;
-            // 
             // lbl_titulo
             // 
             this.lbl_titulo.AutoSize = true;
@@ -302,6 +294,16 @@ namespace Video_Club
             this.lbl_titulo.Size = new System.Drawing.Size(97, 13);
             this.lbl_titulo.TabIndex = 0;
             this.lbl_titulo.Text = "Ventas o Alquileres";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(10)))), ((int)(((byte)(60)))));
+            this.panel1.Controls.Add(this.lbl_titulo);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1084, 32);
+            this.panel1.TabIndex = 1;
             // 
             // ventas
             // 
@@ -348,7 +350,7 @@ namespace Video_Club
         private System.Windows.Forms.Button btn_modificar;
         private System.Windows.Forms.Button btn_eliminar;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lbl_titulo;
+        private System.Windows.Forms.Panel panel1;
     }
 }

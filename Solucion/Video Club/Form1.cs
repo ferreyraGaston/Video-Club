@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Data.OleDb;
 
 namespace Video_Club
 {
@@ -107,6 +108,9 @@ namespace Video_Club
         private void btn_Clientes_Click(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new clientes());
+
+           
+
         }
 
         private void btn_Socios_Click(object sender, EventArgs e)
@@ -122,6 +126,30 @@ namespace Video_Club
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             AbrirFormEnPanel(new inicio());
+        }
+
+        private void btnConexion_Click(object sender, EventArgs e)
+        {
+            string cadenaConexion = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source= D:\\BD Toldito\\Prueba\\BD\\BD_Bibloteca_V1.mdb";
+            OleDbConnection conexion = new OleDbConnection(cadenaConexion);
+
+            try
+            {
+                conexion.Open();
+                MessageBox.Show("Conexión Exitosa");
+                // btnSalir.Visible = true;
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Conexión fallida");
+            }
+            conexion.Close();
+        }
+
+        private void BarraTitulo_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

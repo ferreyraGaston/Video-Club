@@ -135,15 +135,15 @@ namespace Video_Club
 
         private void ventas_Load(object sender, EventArgs e)
         {
-            string cadena = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\\BD Toldito\\Prueba\\BD\\toldito_pba.mdb;User Id=admin;Password=;";
-            OleDbConnection con = new OleDbConnection(cadena);
-            con.Open();
-            string sql = "select * from Factura";
-            OleDbDataAdapter da = new OleDbDataAdapter(sql, cadena);
-            DataTable dt = new DataTable();
-            con.Close();
-            da.Fill(dt);
-            dgv_detalle.DataSource = dt;
+            //string cadena = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\\BD Toldito\\Prueba\\BD\\toldito_pba.mdb;User Id=admin;Password=;";
+            //OleDbConnection con = new OleDbConnection(cadena);
+            //con.Open();
+            //string sql = "select * from Factura";
+            //OleDbDataAdapter da = new OleDbDataAdapter(sql, cadena);
+            //DataTable dt = new DataTable();
+            //con.Close();
+            //da.Fill(dt);
+            //dgv_detalle.DataSource = dt;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -159,6 +159,9 @@ namespace Video_Club
             dgv_detalle.DataSource = dt;
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
     }
 }

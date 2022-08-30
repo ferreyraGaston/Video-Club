@@ -31,6 +31,7 @@ namespace Video_Club
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.btnConexion = new System.Windows.Forms.Button();
             this.PicRestaurar = new System.Windows.Forms.PictureBox();
             this.PicMin = new System.Windows.Forms.PictureBox();
             this.PicMax = new System.Windows.Forms.PictureBox();
@@ -68,6 +69,7 @@ namespace Video_Club
             // BarraTitulo
             // 
             this.BarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(10)))), ((int)(((byte)(87)))));
+            this.BarraTitulo.Controls.Add(this.btnConexion);
             this.BarraTitulo.Controls.Add(this.PicRestaurar);
             this.BarraTitulo.Controls.Add(this.PicMin);
             this.BarraTitulo.Controls.Add(this.PicMax);
@@ -77,7 +79,18 @@ namespace Video_Club
             this.BarraTitulo.Name = "BarraTitulo";
             this.BarraTitulo.Size = new System.Drawing.Size(1300, 35);
             this.BarraTitulo.TabIndex = 1;
+            this.BarraTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.BarraTitulo_Paint);
             this.BarraTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BarraTitulo_MouseDown);
+            // 
+            // btnConexion
+            // 
+            this.btnConexion.Location = new System.Drawing.Point(32, 7);
+            this.btnConexion.Name = "btnConexion";
+            this.btnConexion.Size = new System.Drawing.Size(75, 23);
+            this.btnConexion.TabIndex = 1;
+            this.btnConexion.Text = "CONEXION";
+            this.btnConexion.UseVisualStyleBackColor = true;
+            this.btnConexion.Click += new System.EventHandler(this.btnConexion_Click);
             // 
             // PicRestaurar
             // 
@@ -287,7 +300,7 @@ namespace Video_Club
             this.btn_Compras.Name = "btn_Compras";
             this.btn_Compras.Size = new System.Drawing.Size(188, 32);
             this.btn_Compras.TabIndex = 7;
-            this.btn_Compras.Text = "Compras";
+            this.btn_Compras.Text = "Prestamo";
             this.btn_Compras.UseVisualStyleBackColor = false;
             this.btn_Compras.Click += new System.EventHandler(this.btn_Compras_Click);
             // 
@@ -365,7 +378,7 @@ namespace Video_Club
             this.btn_ventas.Name = "btn_ventas";
             this.btn_ventas.Size = new System.Drawing.Size(188, 32);
             this.btn_ventas.TabIndex = 1;
-            this.btn_ventas.Text = "Ventas";
+            this.btn_ventas.Text = "Consultas";
             this.btn_ventas.UseVisualStyleBackColor = false;
             this.btn_ventas.Click += new System.EventHandler(this.btn_ventas_Click);
             // 
@@ -441,6 +454,7 @@ namespace Video_Club
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Button btn_RepALquiler;
         private System.Windows.Forms.Button btn_RepVentas;
+        private System.Windows.Forms.Button btnConexion;
     }
 }
 
